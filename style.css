@@ -1,0 +1,246 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #0a0a0a;
+  overflow-x: hidden;
+  background: #1C2833;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */ */
+  /* background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+  background-attachment: fixed;
+  filter: grayscale(50%);
+}
+
+.container{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30vh 1fr;
+}
+
+.sideBar{
+  width: 100%;
+  display: grid;
+  color : white;
+  grid-template-rows: 12vh 1fr 100px;
+  grid-gap: 5px;
+  background: #1C2833;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */ */
+  /* background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+  background-attachment: fixed;
+  filter: grayscale(20%);
+}
+
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 2rem;
+}
+
+.buttons > h5 {
+  margin-top: 1rem;
+  margin-left: .5rem;
+}
+
+.buttons h5 i{
+  margin-right: .5rem;
+}
+
+.help{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help > * {
+  display: inline;
+  margin: 0 5px;
+}
+
+.home{
+  width: 100%;
+  background: #1C2833;  /* fallback for old browsers */
+}
+
+nav{
+  height: 12vh;
+  width: 100%;
+  background-color: #1C2833;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.search{
+    margin: 2rem 2rem;
+    display: flex;
+}
+
+#searchIcon{
+  margin-right: 0.5rem;
+  font-size: 25px;
+  color: white;
+}
+
+.search input[type="text"]{
+  box-sizing: none;
+  border: none;
+  background-color: #1C2833;
+  color: white;
+  font-size: 18px;
+  height: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.nav-buttons{
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h2{
+  font-size: 20px;
+}
+
+nav h2:nth-child(1){
+  height: 30px;
+  border-bottom: 2px solid white;
+}
+
+.nav-buttons > h2{
+  color: white;
+}
+
+.nav-buttons i {
+  color : white;
+  font-size: 20px;
+}
+
+
+.buttons h5{
+  font-size: 16px;
+}
+
+
+.grid{
+  display: grid;
+  padding: .5rem 2rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-rows: repeat(4 , 25vh);
+  grid-gap: 1rem;
+}
+
+.grid > div {
+  position: relative;
+}
+
+
+.grid :nth-child(1){
+  grid-column: span 2;
+  background-image: url("fahion7.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
+
+.grid :nth-child(4){
+  grid-column: span 2;
+  overflow: hidden;
+  background-image: url("fahion7.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.grid :nth-child(2){
+  grid-row: span 2;
+  background-image: url("fahion2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.grid :nth-child(3){
+  grid-row: span 2;
+  background-image: url("fahion3.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.grid :nth-child(5){
+  grid-row: span 2;
+  background-image: url("fahion5.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+
+.grid :nth-child(6){
+  grid-row: span 2;
+  background-image: url("fahion6.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.grid :nth-child(7){
+  grid-column: span 2;
+  background-image: url("fahion7.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.grid :nth-child(8){
+  grid-column: span 2;
+  background-image: url("fahion8.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+
+.grid > div .like{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: none;
+  position: absolute;
+  font-size: 20px;
+  top : 0.7rem;
+  right: .7rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color : black;
+  background-color: white;
+}
